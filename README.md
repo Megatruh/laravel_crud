@@ -28,31 +28,26 @@ Sistem manajemen inventori kopi sederhana yang dibangun untuk memenuhi tugas pra
 
 Ikuti langkah-langkah berikut untuk menjalankan project ini di lingkungan lokal Anda:
 
-### 1. Clone Repository
 ```bash
+# 1. Clone Repository
 git clone [https://github.com/Megatruh/laravel_crud.git](https://github.com/Megatruh/laravel_crud.git)
 cd laravel_crud
 
-### 2. Instalasi Dependensi
-```bash
+#2. Instalasi Dependensi
 composer install
 npm install && npm run build
 
-### 3. Konfigurasi Environment
-```bash
+#3. Konfigurasi Environment
 cp .env.example .env
 php artisan key:generate
 
-### 4. Migrasi Database
-```bash
+#4. Migrasi Database
 php artisan migrate
 
-### 5. Membuat User Admin
-```bash
+#5. Membuat User Admin
 php artisan make:filament-user
 
-### 6. Jalankan Server
-```bash
+#6. Jalankan Server
 php artisan serve
 //Akses dashboard di: http://127.0.0.1:8000/admin
 
